@@ -18,7 +18,13 @@ const UserTable = (props) => {
               <td>{user.name}</td>
               <td>{user.username}</td>
               <td>
-                <button className="btn btn-secondary">Edit</button>
+                <button 
+                className="btn btn-secondary"
+                onClick={() => {
+                    props.editRow(user)
+                }}
+                
+                >Edit</button>
                 <button
                   className="btn btn-danger"
                   onClick={() => {
