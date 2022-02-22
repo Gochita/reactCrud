@@ -43,7 +43,9 @@ const AddUserForm = (props) => {
       <div>
         {errors.username?.type === "required" && "Este campo es obligatorio"}
       </div>
-      <button>Add new user</button>
+      <button
+      class="btn btn-success"
+      >Add new user</button>
     </form>
   );
 };

@@ -57,7 +57,9 @@ const EditUserForm = (props) => {
       <div>
         {errors.username?.type === "required" && "Campo requerido"}
       </div>
-      <button>Edit user</button>
+      <button
+      className="btn btn-secondary"
+      >Edit user</button>
     </form>
   );
 };
